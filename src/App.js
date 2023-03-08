@@ -11,16 +11,16 @@ function App() {
     },
     {
       id: 'e2',
-      title: 'Cricket bat',
+      title:'Cricket bat',
       amount: 100,
-      date: new Date(2023, 10, 5),
+      date: new Date(2023, 11, 8),
       locationOfExpenditure: 'Sports shop'
     },
     {
       id: 'e3',
       title: 'Bat',
       amount: 1000,
-      date: new Date(2023, 2, 5),
+      date: new Date(2023, 2, 6),
       locationOfExpenditure: 'Sports shop'
     }
   ];
