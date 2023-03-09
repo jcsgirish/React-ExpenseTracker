@@ -1,6 +1,6 @@
 import ExpenseItem from "./component/ExpenseItem";
 
-function App() {
+const App=()=> {
   const expenses = [
     {
       id: 'e1',
@@ -12,7 +12,7 @@ function App() {
       id: 'e2',
       title:'Rugby',
       amount: 100,
-      date: new Date(2023, 11, 8),
+      date: new Date(2023, 4, 8),
    
     },
     {
@@ -21,24 +21,31 @@ function App() {
       amount: 1000,
       date: new Date(2023, 2, 6),
   
+    },
+    {
+      id: 'e4',
+      title: 'Boxing',
+      amount: 800,
+      date: new Date(2023, 9, 1),
+  
     }
+
   ];
 
   const expenseItems = [];
-
   for (let i = 0; i < expenses.length; i++) {
     const expense = expenses[i];
-
     expenseItems.push(
       <ExpenseItem
         key={expense.id}
-        date={expense.date}
+        title={expense.title}
         amount={expense.amount}
-        title={expense.title}></ExpenseItem>
-      
-       
+        date={expense.date}></ExpenseItem>
+
+
     );
   }
+
 
   return (
     <div>
@@ -47,5 +54,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

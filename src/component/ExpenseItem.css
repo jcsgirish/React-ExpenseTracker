@@ -1,50 +1,55 @@
 .expense-item {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: #796565;
-  border-radius: 10px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  padding:1px;
-  margin-bottom: 8px;
-}
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: #575555;
+  border-radius: 1rem;
 
+}
 .Expense-Title {
-  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  flex: 1;
   color: white;
-  margin-left: 1.5rem;
-  display: inline-block
+  display: inline-block;
+  margin-left: 2rem;
 }
 
 .Expense-Amount {
-  display: flex;
   font-size: 1rem;
-  background-color: #9765e9;
-  border-radius: 8px;
+  font-weight: bold;
   color: white;
+  background-color: #40005d;
   border: 1px solid white;
   padding: 0.5rem;
-  margin-left: 62rem;
+  border-radius: 12px;
   display: inline-block;
-  margin-right: 1rem;
+  margin-left: 60rem;
 }
-
-@media (min-width: 500px) {
+.expense-item h2 {
+  font-size: 1rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: white;
+}
+@media (min-width: 100px) {
   .expense-item {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem;
+    justify-content: flex-start;
+  flex: 1;
   }
 
   .Expense-Title {
     font-size: 1rem;
-    margin-left: 0;
-    flex: 1;
+  
   }
 
   .Expense-Amount {
     font-size: 1rem;
+    padding: 0.5rem 1.5rem;
   }
 }
