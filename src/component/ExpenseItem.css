@@ -1,4 +1,4 @@
-.ExpenseItem-Dates {
+.expense-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,38 +6,45 @@
   border-radius: 10px;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  padding: 10px;
-  margin-bottom: 10px;
-  }
-
-.ExpenseItem-Description {
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  margin-left: 70px;
-
+  padding:1px;
+  margin-bottom: 8px;
 }
 
-.ExpenseItem-Amount {
+.Expense-Title {
+  font-size: 1rem;
+  color: white;
+  margin-left: 1.5rem;
+  display: inline-block
+}
+
+.Expense-Amount {
+  display: flex;
+  font-size: 1rem;
   background-color: #9765e9;
-  border-radius: 10px;
+  border-radius: 8px;
   color: white;
-  font-weight: bold;
-  padding: 10px;
   border: 1px solid white;
+  padding: 0.5rem;
+  margin-left: 62rem;
+  display: inline-block;
+  margin-right: 1rem;
 }
-  @media (min-width:580px) {
-    .ExpenseItem-Description{
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        flex: 1;
-    
-    }
-    .ExpenseItem-Description p{
-        font-size: 1rem;
-    }
-    .ExpenseItem-Amount {
-        font-size: 1 rem;
-    }
+
+@media (min-width: 500px) {
+  .expense-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
   }
+
+  .Expense-Title {
+    font-size: 1rem;
+    margin-left: 0;
+    flex: 1;
+  }
+
+  .Expense-Amount {
+    font-size: 1rem;
+  }
+}
