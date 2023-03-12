@@ -4,7 +4,7 @@
 const ExpenseDetails=(props)=>{
     return (
 
-            <div className="expense-details">
+            <div>
               <h2 className="expense-title">{props.title}</h2>
               <div className="expense-amount">Rs.{props.amount}</div>
             </div>
