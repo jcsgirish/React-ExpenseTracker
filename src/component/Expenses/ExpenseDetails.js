@@ -1,7 +1,7 @@
 
 
 
-function ExpenseDetails(props){
+const ExpenseDetails=(props)=>{
     return (
 
             <div className="expense-details">
