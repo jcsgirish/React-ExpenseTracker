@@ -1,4 +1,5 @@
 import React from 'react';
+import NewExpense from './component/NewExpense/NewExpense';
 
 import Expenses from  "./component/Expenses/Expenses";
 
@@ -29,11 +30,17 @@ const App = () => {
   ];
   return (
     <div>
-     <h2 style={{textAlign:'center'}}>Expence Tracker</h2>
-    
-      
+ 
+     <NewExpense></NewExpense>
+
+
+
       <Expenses items={expenses} />
+
+
     </div>
+ 
+
   );
 }
 export default App;

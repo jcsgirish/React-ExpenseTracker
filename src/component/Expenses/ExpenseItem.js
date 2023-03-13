@@ -12,7 +12,7 @@ const[title, setTitle] = useState(props.title);
 
 
   const clickhandle =()=>{
-    setTitle('100$');
+    setTitle();
  
 
     console.log(title)
@@ -27,7 +27,8 @@ const[title, setTitle] = useState(props.title);
     
     <ExpenseDetails title ={title} amount={props.amount} />
 
-    <button className='Button'onClick= {clickhandle}>DeleteExpense</button>
+    <button className='Button'onClick= {clickhandle}>Delete</button>
+   
     
     </Card>
     
