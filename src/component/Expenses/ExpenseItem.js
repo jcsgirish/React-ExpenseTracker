@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState } from 'react';
 
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
@@ -8,9 +8,16 @@ import ExpenseDetails  from './ExpenseDetails'
 
 
 const ExpenseItem = (props) => {
-  const click =()=>{
-    console.log('deleted')
-  }
+const[title, setTitle] = useState(props.title);
+
+
+  const clickhandle =()=>{
+    setTitle('100$');
+ 
+
+    console.log(title)
+
+  };
 
   return (
 
@@ -18,9 +25,9 @@ const ExpenseItem = (props) => {
     
     <ExpenseDate date ={props.date} />
     
-    <ExpenseDetails title ={props.title} amount={props.amount} />
+    <ExpenseDetails title ={title} amount={props.amount} />
 
-    <button className='Button'onClick= {click}>DeleteExpense</button>
+    <button className='Button'onClick= {clickhandle}>DeleteExpense</button>
     
     </Card>
     

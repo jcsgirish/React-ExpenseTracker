@@ -25,7 +25,7 @@ const App = () => {
       title: 'Soccer',
       amount: 500,
       date: new Date(2023, 7, 1),
-    },
+    }
   ];
   return (
     <div>
