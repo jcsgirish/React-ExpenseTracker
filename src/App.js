@@ -30,7 +30,6 @@ const App = () => {
   ];
 
   const addexpensehandler=(expense)=>{
-    console.log("In App.js")
     console.log(expense)
   };
   return (
