@@ -26,6 +26,18 @@ const DummyExpenses = [
     title: 'Soccer',
     amount: 500,
     date: new Date(2023, 7, 1),
+  },
+  {
+    id: 'e5',
+    title: 'food',
+    amount: 50,
+    date: new Date(2021, 5, 1),
+  },
+  {
+    id: 'e6',
+    title: 'lunch',
+    amount: 500,
+    date: new Date(2020, 7, 1),
   }
 
 ];
