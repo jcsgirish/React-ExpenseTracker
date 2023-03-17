@@ -10,6 +10,7 @@ import ExpenseDetails  from './ExpenseDetails'
 const ExpenseItem = (props) => {
 return (
 
+    
     <Card className='expense-item'>
     
     <ExpenseDate date ={props.date} />
